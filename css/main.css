@@ -148,10 +148,12 @@ main {
 
 .contact-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+
+.form-wrapper {
   width: 90%;
-  flex-wrap: wrap;
-  margin:auto;
 }
 
 fieldset legend {
@@ -161,30 +163,82 @@ fieldset legend {
   padding-bottom: 1em;
 }
 
-
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: grey;
+}
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea,
-select {
+select,
+option {
   background: rgba(255,255,255,0.1);
   border: none;
-  font-size: 16px;
+  /* font-size: 16px;
   height: auto;
   margin: 0;
-  outline: 0;
+  outline: 0; */
   padding: 15px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #8a97a0;
+  background-color: #E7E4DE;
+  color: grey;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 90%;
+  border-radius: 3%;
+  /* text-align: right; */
+  display: inline;
+  transition: 1s;
+
+}
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 5px;
+}
+
+input:hover,
+select:hover{
+  background: #F6F5F2;
+  transition: 1s;
+}
+
+input:focus,
+select:focus {
+  outline-color: #2E4057;
+}
+
+#zipcod {
+  max-width: 130px;
+}
+
+#state {
+  width: 90%;
 }
 
 
+/*===========NEWSLETTER CONTAINER===========*/
 
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+}
 
+.newsletter-wrapper {
+  width: 90%;
+}
+
+#newslegend {
+  padding-bottom: .1em;
+}
+
+p {
+  color: grey;  
+}
 
 
 
