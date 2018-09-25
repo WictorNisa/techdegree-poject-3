@@ -10,6 +10,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
@@ -40,20 +41,20 @@
     <fieldset>
       <legend>Contact Information</legend>
 
-      <label for="name">Full Name</label required>
-        <input type="text" id="name" name="user_name" placeholder="Required">
+      <label for="name">Full Name</label>
+        <input type="text" id="name" name="user_name" placeholder="Required" required>
 
-      <label for="mail">Email Adress</label required>
-        <input type="email" id="mail" name="user_email" placeholder="Required">
+      <label for="mail">Email Adress</label>
+        <input type="email" id="mail" name="user_email" placeholder="Required" required>
 
       <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" placeholder="Optional">
 
       <label for="street">Street Adress</label>
-        <input type="text" id="street" name="street" placeholder="e.g Mystreet 19">
+        <input type="text" id="street" name="street" placeholder="e.g Mystreet 19" required>
 
       <label for="city">City</label>
-        <input type="text" id="city" name="city">
+        <input type="text" id="city" name="city" required>
 
 
       <label for="state">State</label>
@@ -113,7 +114,7 @@
         </select>
 
         <label for="zipcode">Zip Code</label>
-          <input id="zipcod" type="text" id="zipcode" name="zip_code">
+          <input id="zipcod" type="text" id="zipcode" name="zip_code" required>
 
       </fieldset>
       </form>
@@ -127,30 +128,30 @@
           <legend id="newslegend">Newsletter</legend>
           <p>Select the newsletters you would like to receive</p>
 
-          <input type="checkbox" id="html_news" value="intrest_newsletters" name="user_newsletters"><label class="light" for="html_news">HTML News</label><br>
+          <input type="checkbox" id="html_news" value="intrest_newsletters" name="user_newsletters"><label class="check" for="html_news">HTML News</label><br>
 
-          <input type="checkbox" id="css_news" value="intrest_newsletters" name="user_newsletters"><label class="light" for="css_news">CSS News</label><br>
+          <input type="checkbox" id="css_news" value="intrest_newsletters" name="user_newsletters"><label class="check" for="css_news">CSS News</label><br>
 
-          <input type="checkbox" id="js_news" value="intrest_newsletters" name="user_newsletters"><label class="light" for="js_news">Javascript News</label>
+          <input type="checkbox" id="js_news" value="intrest_newsletters" name="user_newsletters"><label class="check" for="js_news">Javascript News</label>
 
           <p>Newsletter format</p>
 
-          <input type="radio" id="html_format" value="html_format" name="user_format"><label for="html_format" class="light">HTML</label><br>
+          <input type="radio" id="html_format" value="html_format" name="user_format"><label for="html_format" class="check">HTML</label><br>
 
-          <input type="radio" id="plain_format" value="plain_format" name="user_format"><label for="plain_format" class="light">Plain text</label>
+          <input type="radio" id="plain_format" value="plain_format" name="user_format"><label for="plain_format" class="check">Plain text</label>
 
           <p>Other topics you'd like to hear about</p>
 
           <textarea id="topics" name="user_topics"></textarea>
 
-          <button type="submit">Sign Up</button>
+          <button type="submit">Sign Up!</button>
         </fieldset>
       </form>
     </div>
   </section>
 
   <footer>
-    <p>Copyright the code review</p>
+    <p id="copyrightp">Copyright the code review</p>
   </footer>
 </main>
 

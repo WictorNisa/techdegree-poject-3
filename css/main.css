@@ -203,13 +203,17 @@ option {
 
 input:hover,
 select:hover{
-  background: #F6F5F2;
-  transition: 1s;
+  /* background: #F6F5F2;
+  transition: 1s; */
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus,
+button:focus {
   outline-color: #2E4057;
+  background: #F6F5F2;
+  transition: 1s;
 }
 
 #zipcod {
@@ -237,7 +241,69 @@ select:focus {
 }
 
 p {
-  color: grey;  
+  color: grey;
+}
+
+.check {
+  display: inline-block;
+  padding-left: 13px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #2E4057;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #2E4057;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+#copyrightp {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select,
+  option {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    /* font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0; */
+    padding: 15px;
+    background-color: #E7E4DE;
+    color: grey;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 20px;
+    max-width: 300px;
+    width: 90%;
+    border-radius: 3%;
+    /* text-align: right; */
+    display: inline;
+    transition: 1s;
+}
+
+label {
+  display: inline-block;
+  text-align: left;
+
 }
 
 
