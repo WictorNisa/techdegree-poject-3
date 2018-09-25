@@ -214,8 +214,8 @@ button:focus {
   transition: 1s;
 }
 
-#zipcod {
-  max-width: 130px;
+#zipcode {
+  max-width: 130px !important;
 }
 
 #state {
