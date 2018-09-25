@@ -323,7 +323,10 @@ ul {
          max-width: 25% !important;
         }
 
-
+  textarea {
+    width: 100%;
+    max-width: 740px;
+  }
 }
 /* ==========================================================================
    Helper classes
