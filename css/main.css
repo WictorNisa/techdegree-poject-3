@@ -222,6 +222,7 @@ button:focus {
 
 #state {
   width: 90%;
+  padding: 15px;
 }
 
 
@@ -263,51 +264,67 @@ button {
   margin-bottom: 10px;
 }
 
+button:hover {
+  border: 2px solid #2E4057;
+  background: #1D3557;
+}
+
 #copyrightp {
   text-align: center;
   font-family: 'Cinzel', serif;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-
-
+/*===========MEDIA QUERIES===========*/
 
 
 @media (min-width: 768px) {
 
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea,
-  select,
-  option {
-    background: rgba(255,255,255,0.1);
-    border: none;
-    /* font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0; */
-    padding: 15px;
-    background-color: #E7E4DE;
-    color: grey;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 20px;
-    max-width: 300px;
-    width: 90%;
-    border-radius: 3%;
-    /* text-align: right; */
-    display: inline;
-    transition: 1s;
+  .form-wrapper {
+    width: 70%;
+  }
+
+  .newsletter-wrapper {
+    width: 70%;
+  }
+
+  form {
+          max-width: 768px;
+          margin: auto;
+      }
+      ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        li {
+          display: flex;
+          margin-bottom: 20px;
+        }
+
+        li label {
+          margin: auto 0;
+          flex: 1 150px;
+          max-width: 150px !important;
+        }
+
+        li input,
+        li select {
+          margin-bottom: 0 !important;
+          flex: 2 550px;
+          max-width: 100% !important;
+        }
+
+        li input[name="zip_code"] {
+         max-width: 25% !important;
+        }
+
+
 }
-
-label {
-  display: inline-block;
-  text-align: left;
-
-}
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
