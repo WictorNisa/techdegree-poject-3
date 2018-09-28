@@ -267,12 +267,12 @@ ul {
 
 @media (min-width: 768px) {
 
-  /* .form-wrapper {
-    width: 70%;
+  .form-wrapper {
+    width: 90%;
   }
 
   .newsletter-wrapper {
-    width: 70%; */
+    width: 90%;
   }
 
   form {
@@ -291,7 +291,7 @@ ul {
 
         li label {
           margin: auto 0;
-          flex: 1 150px;
+          flex: 1 162px;
           max-width: 150px !important;
         }
 
@@ -307,7 +307,7 @@ ul {
         }
 
   textarea {
-    width: 100%;
+    width: 95.5%;
     max-width: 740px;
   }
 }
